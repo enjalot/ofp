@@ -1,0 +1,22 @@
+<index:>
+  <table class="vouchers">
+    <thead>
+      <tr>
+        <td>Voucher #</td>
+        <td>Name</td>
+        <td width="50%">Address</td>
+        <td>Phone</td>
+      </tr>
+    </thead>
+    <tbody>
+      {{each list as #voucher}}
+      <tr class="row">
+        <td>{{#voucher.voucher}}</td>
+        <td>{{#voucher.name}}</td>
+        <td>{{#voucher.address}}</td>
+        <td>{{#voucher.phone}}</td>
+        <td><a on-click="delete(#voucher)">X</a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>

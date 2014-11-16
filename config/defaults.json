@@ -1,0 +1,7 @@
+{
+  "NODE_ENV": "development",
+  "PORT": 3000,
+  "MONGO_URL": "mongodb://localhost:27017/ofp",
+  "SESSION_SECRET": "ee55ad33ee00a27abd8c90a6f3a6944e44ccf543",
+  "SESSION_COOKIE": "10084818326cad34b4c85f10ac23eba21fefc4aa"
+}
