@@ -12,6 +12,8 @@ http://codepen.io/enjalot/pen/VYwxPV
 # install
 
 ```
+git clone https://github.com/enjalot/ofp.git
+cd ofp
 npm install
 MONGO_URL=mongodb://localhost:27017/ofp node server.js
 ```
