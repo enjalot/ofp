@@ -13,13 +13,7 @@ app.component(require("../../components/register"));
 app.component(require("../../components/vouchers"));
 
 app.proto.save = function(record) {
-  var x = {
-    voucher: record.voucher,
-    name: record.name,
-    address: record.address,
-    phone: record.phone,
-  }
-  this.model.add("vouchers", x)
+  this.model.add("vouchers", record)
 }
 
 app.get('/', function(page, model){
