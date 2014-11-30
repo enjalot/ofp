@@ -11,8 +11,10 @@ Register.prototype.create = function(model) {
 };
 Register.prototype.save = function() {
   // we've defined a view function, i.e. a function that can be called from the view
-  console.log("save!", this.model.get())
-  this.emit("save", this.model.get('voucher'))
+  this.model.set("voucher.createdAt", +new Date()) // this should really be done on the server
+  voucher = this.model.get('voucher');
+  console.log("save!", voucher)
+  this.emit("save", voucher)
   this.model.set("voucher", {})
   this.model.set("address", "")
 };
